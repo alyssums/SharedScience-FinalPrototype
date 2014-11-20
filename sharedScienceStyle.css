@@ -1,3 +1,6 @@
+html{
+	font-size: 16px;
+}
 body{
 	margin: 0px;
 	font-family: Century Gothic;
@@ -8,6 +11,13 @@ body{
 }
 ul {
   list-style-type: none;
+  padding:0;
+}
+a{
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 0.50s;
+	transition-timing-function: ease-in-out;
 }
 nav{
 	position: fixed;
@@ -20,14 +30,18 @@ nav{
 	padding-top: 2%;
 	padding-bottom: 1%;
 	z-index: 2;
-	box-shadow: 0px 0px 30px 0px #000;
+	box-shadow: 0px 0px 20px 0px #000;
+}
+nav a:hover{
+	color: #8DC63F;
 }
 .navLinks{
 	font-family: Century Gothic;
 	text-decoration: none;
-	color: white;
-	padding-left: 1%;
-	padding-right: 1%;
+	font-size: 1.25rem;
+	color: #FFF;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	z-index: 3;
 	margin-right: auto;
 	margin-left: auto;
@@ -35,8 +49,7 @@ nav{
 }
 .mainLogo{
 	max-width: 120%;
-	max-height: 120%;
-	float: left;
+	max-height: 100%;
 	position: absolute;
 	left: 0%;
 	top: 0%;
@@ -75,19 +88,58 @@ nav{
 	max-width: 70%;
 	max-height: 70%;
 }
-content{
-	margin-left: 15%;
-	margin-right: 15%;
-	max-height: 60%;
-	padding-bottom: 30%;
-	width: 5%;
-	text-align: center;
-	z-index: 1;
-	overflow-y: scroll;
+aside{
+	background-color: #3D403A;
+	width: 15%;
+	position: fixed;
+	padding-top: 7%;
+	padding-left: 1%;
+	padding-right: 3%;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	text-decoration: none;
+	box-shadow: 0px 0px 20px 0px #000;
 }
-content p{
-	padding-left: 20%;
-	padding-right: 20%;
+.asideHeader a{
+	color: #FFF;
+	font-size: 1.50rem;
+	text-align: left;
+}
+aside a{
+	color: #8DC63F;
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+aside li{
+	padding: 5%;
+	border-bottom: 2px solid #20211E;
+}
+aside a:hover{
+	color: #FFF;
+}
+.button{
+	background-color: #8DC63F;
+	font-family: Century Gothic;
+	font-size: 1rem;
+	color: #FFF;
+	border: none;
+	border-radius: 4px;
+	padding: 2%;
+}
+.button:hover{
+	background-color: #80BD2D;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+section{
+	margin-top: 7%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 10%;
+	text-align: left;
+	z-index: 1;
+	font-size: 1.25rem;
 }
 table, th, tr, td{
 	border: 2px solid #000;
@@ -106,31 +158,24 @@ table, th, tr, td{
 footer{
 	position: fixed;
 	width: 100%;
-	height: 10px;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
+	height: 4%;
+	padding: 1%;
 	bottom: 0px;
+	left: 0px;
 	background-color:#8DC63F;
 	color: #000;
 	text-align: center;
 	z-index: 1;
-	box-shadow: 0px 0px 7px 0px #000;
+	box-shadow: 0px 0px 15px 0px #000;
 }
 footer img{
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 70%;
+	max-height: 70%;
 	position: absolute;
-	padding-left: 10px;
-	padding-right: 20px;
-	padding-top: 10px;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
 	bottom: 0px;
-}
-footer a{
-	color: #000;
-	padding: 2%;
-	margin: 30px;
 }
 /*Contact Section*/
 .contact-form {
@@ -199,7 +244,7 @@ footer a{
   height: 20px;
 }
 #upload-bar {
-  margin: 0 auto;
+  margin-left: 25%;
   width: 0px;
   position: absolute;
   left: 0;
