@@ -252,3 +252,49 @@ footer img{
   margin: 0 auto;
   max-width: 600px;
 }
+.home-sections h4 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+.home-sections span {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all .5s ease;
+  position: relative;
+}
+.home-sections span:hover {
+  background-size: 120% 120%;
+}
+.home-sections span:after {
+    position: absolute;
+    background-color: rgba(0,0,0,.35);
+    font-family: sans-serif;
+    padding-top: 250px;
+    font-size: 2em;
+    color: #fff;
+    top:  0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity .5s linear;
+    box-sizing: border-box;
+}
+.home-sections span:hover:after {
+  opacity: 1;
+}
+.astronomy-section {
+  background-image: url("photos/astronomy_home.jpg")
+}
+.physics-section {
+  background-image: url("photos/physics_home.gif")
+}
+.chemistry-section {
+  background-image: url("photos/chemistry_home.jpg")
+}
