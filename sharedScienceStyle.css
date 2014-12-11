@@ -19,6 +19,7 @@ a{
 	transition-duration: 0.50s;
 	transition-timing-function: ease-in-out;
 }
+/*Main Nav*/
 nav{
 	position: fixed;
 	background-color: #000;
@@ -47,6 +48,7 @@ nav a:hover{
 	margin-left: auto;
 	display: inline-block;
 }
+/*Nav Logo Styles*/
 .mainLogo{
 	max-width: 120%;
 	max-height: 100%;
@@ -88,6 +90,7 @@ nav a:hover{
 	max-width: 70%;
 	max-height: 70%;
 }
+/*Side Nav*/
 aside{
 	background-color: #3D403A;
 	width: 15%;
@@ -119,6 +122,7 @@ aside li{
 aside a:hover{
 	color: #FFF;
 }
+/*Button Style*/
 .button{
 	background-color: #8DC63F;
 	font-family: Century Gothic;
@@ -132,6 +136,7 @@ aside a:hover{
 	background-color: #80BD2D;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+/*Main Content*/
 section{
 	margin-top: 7%;
 	margin-left: 25%;
@@ -141,6 +146,7 @@ section{
 	z-index: 1;
 	font-size: 1.25rem;
 }
+/*Footer*/
 footer{
 	position: fixed;
 	width: 100%;
@@ -162,6 +168,11 @@ footer img{
 	padding-right: 1%;
 	padding-bottom: 1%;
 	bottom: 0px;
+}
+/*Game*/
+.game{
+	height: 50%;
+	width: 80%;
 }
 /*Contact Section*/
 .contact-form {
