@@ -289,6 +289,11 @@ footer img{
 .home-sections span:hover:after {
   opacity: 1;
 }
+.home-sections a {
+  height: 300px;
+  display: inline-block;
+  width: 200px;
+}
 .astronomy-section {
   background-image: url("photos/astronomy_home.jpg")
 }
